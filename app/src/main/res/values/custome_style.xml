@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="tab_Text" parent="@android:style/TextAppearance.Widget.TabWidget">
+<!--        <item name="android:fontFamily"></item>-->
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+    <string name="your_string_here">This is an &lt;u>underline&lt;/u>.</string>
+</resources>

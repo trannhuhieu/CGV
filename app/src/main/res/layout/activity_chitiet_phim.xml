@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".muc.phim.chitiet.ChitietPhim"
+    tools:openDrawer="end">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarPhim"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Phim"
+            app:titleMarginBottom="10dp"
+            android:gravity="center"
+            android:background="@color/white"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="750dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarPhim">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/large_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/image_trailer"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/slide2"
+                            android:scaleType="fitXY"/>
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/play"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/play"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card"
+                    android:layout_width="145dp"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/large_image"
+                    android:layout_marginTop="-110dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="4dp"
+                    app:cardUseCompatPadding="true">
+                    <ImageView
+                        android:id="@+id/small_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/nen5"
+                        android:scaleType="centerCrop"/>
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/large_image"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginBottom="10dp"
+                    android:ellipsize="end"
+                    android:text="Tên Phim"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="23dp"
+                    android:textColor="#FFF5EE"
+                    android:maxLines="2"/>
+
+                <TextView
+                    android:id="@+id/con"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/large_image"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="150dp"
+                    android:text="22h"
+                    android:textStyle="bold"
+                    android:background="@drawable/boder_time"
+                    android:layout_marginRight="20dp"
+                    android:padding="5dp"
+                    android:drawableLeft="@drawable/calendar"
+                    android:drawablePadding="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/large_image"
+                    android:layout_marginVertical="120dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/noidung"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mô tả phim"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="10dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp">
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kiểm duyệt"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/kiemduyet"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kiểm duyệt"
+                            android:layout_weight="3"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp">
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="Thể loại"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/theloai"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kiểm duyệt"
+                            android:layout_weight="3"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="10dp">
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:text="Ngôn ngữ"
+                            android:layout_weight="1"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/ngonngu"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kiểm duyệt"
+                            android:layout_weight="3"
+                            android:textColor="@color/black"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.9dp"
+                        android:background="#000000"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="53dp"
+                        android:orientation="horizontal"
+                        android:padding="9dp"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tin mới &amp; Ưu đãi"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:layout_weight="7"
+                            android:textColor="@color/black"/>
+                        <TextView
+                            android:id="@+id/alltin"
+                            android:layout_width="70dp"
+                            android:layout_height="30dp"
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textAllCaps="true"
+                            android:textSize="15dp"
+                            android:background="@drawable/all"
+                            android:text="Tất cả"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/tintuc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/datvechitiet"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Đặt vé"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/btnbooking"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:headerLayout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/boder_time"
+    android:layout_marginTop="5dp">
+    <TextView
+        android:id="@+id/tenve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên phim"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian đặt vé: "
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/time_ve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/ngay_ve"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Thời gian đặt vé: "
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/bd_ve"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="16"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/kt_ve"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="Thời gian đặt vé: "
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/ghe_ve"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="16"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tong_ve"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="16"
+            android:textSize="17dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</LinearLayout>

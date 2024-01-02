@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".muc.thanhtoan.ChitietThanhtoan">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarchitietthanhtoan"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Thông tin chi tiết"
+            app:titleMarginBottom="10dp"
+            android:gravity="center"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:orientation="vertical"
+            android:background="#dedede"
+            android:paddingHorizontal="15dp"
+            android:paddingTop="5dp">
+            <TextView
+                android:id="@+id/tt_tenphim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Avengers: end game"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAllCaps="true"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/tt_ngay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thứ Tư 28 tháng 6, 2023"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tt_bd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00"
+                        android:textSize="17dp"
+
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" -- "
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/black"/>
+                    <TextView
+                        android:id="@+id/tt_kt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12:27"
+                        android:textSize="17dp"
+
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rạp CGV"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:textColor="#874F4F"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CGV Aeon Tân Phú"
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ghế: "
+                    android:textSize="17dp"
+                    android:textColor="#874F4F"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng Cộng"
+                    android:textSize="17dp"
+                    android:textColor="#874F4F"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tt_ghe"
+                    android:layout_width="176dp"
+                    android:layout_height="wrap_content"
+                    android:text="A1"
+                    android:textSize="17dp"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/tt_tien"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A1"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="@color/red"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logowhite"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:src="@drawable/qr"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vui lòng đưa mã QR này đến quầy vé CGV để nhận vé của bạn"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Quay về trang chủ"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/botron_login"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:padding="5dp"/>
+    </LinearLayout>
+</LinearLayout>

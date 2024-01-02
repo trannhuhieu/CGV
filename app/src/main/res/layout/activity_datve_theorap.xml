@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".muc.datve.theorap.Datve_theorap"
+    android:id="@+id/drawer_layout"
+    tools:openDrawer="end">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarcr"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Chọn rạp"
+            app:titleMarginBottom="10dp"
+            android:gravity="center"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Gợi ý cho bạn"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:background="#dedede"
+            android:textStyle="bold"/>
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:id="@+id/recycler_dvtheophim"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"/>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CGV Aeon Tân Phú"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CGV Vincom Thủ Đức"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:id="@+id/btngv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CGV Vincom Gò vấp"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="khu vực cgv"
+            android:gravity="bottom"
+            android:padding="10dp"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:background="#dedede"
+            android:textStyle="bold"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Hồ Chí Minh"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="hà nội"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Đà nẵng"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="hải phòng"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="quảng ninh"
+            android:gravity="center|left"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            />
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        app:headerLayout="@layout/layout_nav"/>
+</androidx.drawerlayout.widget.DrawerLayout>

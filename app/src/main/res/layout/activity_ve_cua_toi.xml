@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".muc.login.vecuatoi.VeCuaToi"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarvecuatoi"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Vé của tôi"
+            app:titleMarginBottom="10dp"
+            android:gravity="center"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#dedede"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_vecuatoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dedede"/>
+        <TextView
+            android:id="@+id/khongcodl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Không có dữ liệu"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:gravity="center"
+            android:background="#dedede"/>
+    </LinearLayout>
+</LinearLayout>

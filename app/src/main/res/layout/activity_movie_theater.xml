@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".muc.rapCGV.MovieTheater">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarrapCGV"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:title="Rạp Phim CGV"
+            app:titleMarginBottom="10dp"
+            android:gravity="center"
+            android:background="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#dedede"
+            android:text="Gợi ý cho bạn"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_goiy_moives"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#dedede"
+            android:text="khu vực CGV"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lv_khuvucCGV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>
